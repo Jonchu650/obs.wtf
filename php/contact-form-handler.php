@@ -1,3 +1,5 @@
 <?php
-    mail("obs@obs.wtf", "Message from " + $POST_["name"], $_POST["message"], "From: " + $_POST["email"]);
+if ($_POST["submit"]) {
+    mail("obs@obs.wtf", "Message from " + $_POST["name"], $_POST["message"], "From: " + $_POST["email"]);
+}
 ?>
