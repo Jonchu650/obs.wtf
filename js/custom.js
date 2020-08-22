@@ -3,7 +3,7 @@
   "use strict";
 
   window.onload = async () => {
-    if (window.localStorage.darkMode === "true") {
+    if (window.localStorage.darkMode) {
       $('.color-mode-icon').toggleClass('active')
       $('body').toggleClass('dark-mode')
     }
@@ -11,7 +11,7 @@
 
     // COLOR MODE
     $('.color-mode').click(function(){
-      if (window.localStorage.darkMode === "true") window.localStorage.darkMode = "false";
+      if (window.localStorage.darkMode) window.localStorage.removeItem("darkMode");
       else window.localStorage.darkMode = "true";
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
