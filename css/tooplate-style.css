@@ -26,12 +26,9 @@ body {
   letter-spacing: 0.2px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 ul li {
-  list-style: none;
+  font-family: "Maven Pro", sans-serif;
 }
 
 a {
