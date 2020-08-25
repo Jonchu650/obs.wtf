@@ -478,11 +478,15 @@ b, strong {
 .social-links .uil:hover {
   color: #ffc200;
 }
-
+/* Mobile Optimization */
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
     bottom: 50px;
+  }
+  
+  #discordButton {
+    visibility: hidden;
   }
 }
 @media (max-width: 991px) {
@@ -506,6 +510,10 @@ b, strong {
   .contact-info {
     padding: 0 2rem;
   }
+
+  #discordButton {
+    visibility: hidden;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -528,6 +536,10 @@ b, strong {
 
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
+  }
+
+  #discordIframe {
+    visibility: hidden;
   }
 }
 @media (max-width: 580px) {
@@ -555,6 +567,10 @@ b, strong {
     display: block;
     margin: 10px 0 0 0;
   }
+
+  #discordIframe {
+    visibility: hidden;
+  }
 }
 @media (max-width: 320px) {
   .animated-text {
@@ -580,5 +596,8 @@ b, strong {
   .social-links li {
     display: inline-block;
     vertical-align: top;
+  }
+  #discordIframe {
+    visibility: hidden;
   }
 }
