@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Professional Node.js and Web Developer. Advanced advertisement platform developer for Hulu and an Epic Gamer.">
+    <meta name="author" content="OBSCode">
+
+    <title>Cheap VPS Hosting</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <!-- Stolen CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> OBS</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"><span data-hover="Home">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/hosting" class="nav-link"><span data-hover="Hosting">Hosting</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://blog.obs.wtf" class="nav-link"><span data-hover="Blog">Blog</span></a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="/bots.html" class="nav-link"><span data-hover="Bots">Bots</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/basicbot" class="nav-link"><span data-hover="BasicBot">BasicBot</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/shield.html" class="nav-link"><span data-hover="Shield">Shield</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- MAIN CONTENT --> 
+
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="about-text">
+
+<h1>Complete your order!</h1>
+<p>After submitting your order you will receive an invoice at the supplied email, the VPS will not be setup till the invoice is paid.</p>
+
+<script>
+    function updatePrice(elem) {
+        console.log('Something')
+        var priceElem = document.getElementById("priceVPS");
+        var totalElem = document.getElementById("priceTotal");
+        var price = elem.value === "basic" ? '10' : elem.value === "advanced" ? '20' : '50';
+        priceElem.innerHTML = `$${price}<small>USD</small>`;
+        totalElem.innerHTML = `$${+price + 6}<small>USD</small>`;
+
+    };
+</script>
+
+<div class="contact-form">
+<form>
+    <fieldset>
+        <legend>VPS Package</legend>
+        <p>
+            <select id="planSelect" oninput="updatePrice(this)">
+                <option value="basic">Basic ($10/m)</option>
+                <option value="advanced">Advanced ($20/m)</option>
+                <option value="beast">Beast ($50/m)</option>
+            </select>
+        </p>
+       <legend>Operating System</legend>
+       <p>
+          <select id = "myList">
+            <option value = "centOS8">Cent OS 8</option>
+            <option value = "centOS7">Cent OS 7</option>
+            <option value = "debian10">Debian 10</option>
+            <option value = "debian9">Debian 9</option>
+            <option value="ubuntu20">Ubuntu 20.04</option>
+            <option value="ubuntu18">Ubuntu 18.04</option>
+            <option value="ubuntu16">Ubuntu 16.04</option>
+            <option value="fedora">Fedora 32</option>
+            <option value="openSUSE">openSUSE Leap 15.1</option>
+            <option value="freeBSD">FreeBSD 12.1</option>
+            <option value="arch">Arch Linux</option>
+          </select>
+       </p>
+    </fieldset>
+ </form>
+</div>
+<div id="pricing">
+    <h5>Subtotal:</h5>
+    <h3 id="priceVPS">$??<small>USD</small></h3>
+    <h5>Setup Fee:</h5>
+    <h3 id="priceSetup">$6.00<small>USD</small></h3>
+    <h3>Total Today:</h3>
+    <h2 id="priceTotal">$??<small>USD</small></h2>
+</div>
+</section>
+ <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2020 OBSCode. All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by OBS</p>
+                        <p class="copyright-text text-center"><a href="/ToS">Terms of Service</a> &nbsp; <a href="/privacy">Privacy Policy</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <!-- Req Dev -->
+    <script src="js/bdmkqfvwgxtqezcy.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body></html>
